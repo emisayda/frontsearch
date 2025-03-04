@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function loadImagesFromFolder(folderName) {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/images/${folderName}`);
+            const response = await fetch(`https://imageback-3unq.onrender.com/images/${folderName}`);
             const images = await response.json();
 
             if (!response.ok || images.length === 0) {
