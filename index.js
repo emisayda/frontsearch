@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // API'yi çağır
-        const response = await fetch("http://127.0.0.1:5000/scrape", {
+        const response = await fetch("https://imageback-3unq.onrender.com/scrape", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
